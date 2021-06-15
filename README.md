@@ -85,6 +85,10 @@ Example Response:
 
 
   
+
+## Demo
+https://prolaxu.github.io/random-user-generatorJS/
+
 ## Authors
 
 - [@prolaxu](https://github.com/prolaxu)
