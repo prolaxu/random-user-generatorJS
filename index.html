@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+        *{
+            font-family: Poppins;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(271, 74%, 30%);
+        }
+        #user-img{
+            width: 200px;
+            border-radius:10px;
+            transition: .6s ease-in-out;
+
+        }
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+        button{
+            padding: 1rem;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            color: hsl(271, 74%, 30%);
+            transition: .6s ease-in-out;
+        }
+        button:hover{
+            background-color: rgb(26, 190, 141);
+            color: white;
+        }
+        .card-content{
+            text-align: center;
+        }
+        .card-img{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            font-size: 12px;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+        .header h1{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Random Users Generator</h1>
+        <p>Fetched data from api evey time you load new user.</p>
+    </div>
+    <div class="card">
+        <div class="card-img">
+            <img src="" alt="" id="user-img" >
+        </div>
+        <div class="card-content">
+            <div class="card-header">
+                <h2 id="name"></h2>
+            </div>
+            <p><span id="email"></span></p>
+            <p><span id="phone"></span></p>
+            <p><span id="loaction"></span></p>
+
+        </div>
+    </div>
+    <button onclick="NewUser()">Load New User</button>
+    <!-- <input type="text" id="input" oninput="show()" > -->
+    <!-- <input type="text" id="input"  > -->
+
+    <script src="./main.js" ></script>
+</body>
+</html>
